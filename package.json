@@ -1,0 +1,54 @@
+{
+  "name": "xxc",
+  "version": "0.0.1",
+  "description": "execute script from working folder",
+  "main": "src/index.js",
+  "bin": {
+    "xxc": "src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "scripty",
+    "excute scripts"
+  ],
+  "author": "Nir winkler <madvinking@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Madvinking/xxc.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "test": "jest --config jest.config.js --silent=false full-cycle",
+    "test:watch": "jest --watch --config jest.config.js --silent=false full-cycle",
+    "lint": "eslint --quiet --color ."
+  },
+  "dependencies": {
+    "@pnpm/lockfile-file": "4.0.1",
+    "@pnpm/find-workspace-packages": "3.0.4",
+    "@pnpm/logger": "4.0.0",
+    "fs-extra": "^10.0.0",
+    "fs-readdir-recursive": "1.1.0",
+    "glob": "7.1.6",
+    "yaml": "1.10.2"
+  },
+  "devDependencies": {
+    "pnpm": "6.2.5",
+    "husky": "6.0.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "26.6.3",
+    "nodemon": "2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "peerDependencies": {},
+  "volta": {
+    "node": "16.1.0"
+  }
+}
