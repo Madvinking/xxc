@@ -28,15 +28,7 @@
     "test:watch": "jest --watch --config jest.config.js --silent=false full-cycle",
     "lint": "eslint --quiet --color ."
   },
-  "dependencies": {
-    "@pnpm/lockfile-file": "4.0.1",
-    "@pnpm/find-workspace-packages": "3.0.4",
-    "@pnpm/logger": "4.0.0",
-    "fs-extra": "^10.0.0",
-    "fs-readdir-recursive": "1.1.0",
-    "glob": "7.1.6",
-    "yaml": "1.10.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "pnpm": "6.2.5",
     "husky": "6.0.0",
